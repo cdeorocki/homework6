@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> jQuery Cheat Sheet</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script src="Homework6.js"></script>
+	<style>
+		body {
+			background-color: black;
+			text-align: center;
+		}
+
+		#box {
+			/*border: 1px solid red;*/
+			width: 250px;
+			height:60px;
+			margin: 0 auto;
+			padding: 0px;
+			text-align: center;
+		}
+
+		#mainheading {
+			color: #E600E6;
+			top:-60px;
+			position: absolute;
+
+		}
+
+		h4 {
+			color: white;
+			font-weight: bolder;
+			margin: 0 auto;
+		}
+
+		p {
+			display: none;
+			color:white;
+			width: 400px;
+			height:120px;
+			margin: 0 auto;
+		}
+
+		button  {
+			background-color:#FFB8FF;
+			height: 25px;
+			margin-bottom: 10px;
+		}
+
+		#d1 {
+			float:left;
+			color: white;
+			background-color: #E65C00;
+			width: 100px;
+			height:50px;
+			margin-top: 15px;
+			margin-left: 10px;
+			text-align: center;
+			padding-top: 35px;
+		}
+
+		#d2 {
+			float: left;
+			color: white;
+			background-color: #660066;
+			width: 100px;
+			height:50px;
+			margin-top: 15px;
+			margin-left: 10px;
+			text-align: center;
+			padding-top: 35px;
+		}
+
+		#d3 {
+			float:left;
+			color: white;
+			background-color: #005C8A;
+			width: 100px;
+			height: 50px;
+			margin-top: 15px;
+			margin-left: 10px;
+			text-align: center;
+			padding-top: 35px;
+		}
+
+		#content {
+			margin-right: 50%;
+			margin-left: 150px;
+			float: left;
+			position: absolute;
+		}
+
+		#colors {
+			/*border: 1px solid red;*/
+			height: 150px;
+			margin-top: 75px;
+			margin-left: 60%;
+			float: left;
+			position: absolute;
+		}
+
+		#fader {
+			padding: 0px;
+			margin-right: 300px;
+			background-color: white;
+			height: 25px;
+			width: 50px;
+		}
+
+		h3 {
+			color: black;
+			font-weight: bolder;
+			padding: 0px;
+			margin-top: 3px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="box"> 
+		<h1 id="mainheading">jQuery Homework</h1>
+	</div>
+
+	<div id="content">
+		<button id="b1" style="margin-top:35px;">
+			<h4>What is jQuery?</h4>
+		</button>	
+			<p id="p1" style="margin-bottom:15px;"> jQuery is a library of JavaScript functions that are premade and available online. It helps to facilitate actions and interactivity on a webpage that you would otherwise have to completely write on your own. It can be slower tan using plain JavaScript but allows you to develop a page much faster.</p> 
+		<button id="b2">
+			<h4>DOM</h4>
+		</button>
+			<p id="p2" style="margin-bottom:20px;">DOM stands for Document Object Model and has been around since the 90’s. It is the standard of interacting with and representing objects in HTML, XHTML and XML. jQuery works directly with the DOM making it very easy to select elements to apply functions to. We select elements in the DOM with jQuery through the $(“element identifier”) format.</p>
+		<button id="b3">
+			<h4>Using $(document).ready()</h4>
+		</button>
+			<p id="p3"> $(document).ready() is written, once, at the top of a .js file to help ensure that your code does not run until your document’s DOM elements (HTML and CSS) are fully loaded. Once this occurs, your document will fire a ready event that allows the jQuery code to run. </p>		
+		<button id="b4">
+			<h4>Javascript Events</h4>
+		</button>
+			<p id="p4">Events are actions that set off certain functions described in the .js file code. Events can be clicking a button, hovering over an element, or sound activation, for example. Events trigger the function and this allows for interactivity.</p>
+		<button id="b5">
+			<h4>Anonymous Functions</h4>
+		</button>
+			<p id="p5">Anonymous functions are functions that are written in a way that make them a more powerful data type. They can be used as an argument to a function, be returned by a function or block of code or be assigned to a variable.</p>
+		<button id="b6">
+			<h4>Callbacks</h4>
+		</button>
+			<p id="p6">Callbacks use anonymous functions by supplying them to other functions. The anonymous function will run when the function it is contributed to, is finished running. </p>
+	</div>
+
+	<div id="colors">	
+
+		<button id="fader">
+			<h3>Fade!</h3> 
+		</button>
+
+		<div id="d1">Well,</div>
+
+		<div id="d2">Hello</div>
+
+		<div id="d3">There.</div>
+	</div>	
+</body>
+</html>
